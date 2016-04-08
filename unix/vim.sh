@@ -1,7 +1,9 @@
 #!/bin/bash
 
-cwd=$(pwd)
-escape_cwd=$(printf "%q" "$(pwd)")
+#cwd=$(pwd)
+#escape_cwd=$(printf "%q" "$(pwd)")
+cwd="/home/chris/Workspace/exvim"
+escape_cwd=$(printf "%q" "$cwd")
 vim \
     -u "${cwd}/.vimrc" \
     --cmd "let g:exvim_custom_path='${cwd}'" \

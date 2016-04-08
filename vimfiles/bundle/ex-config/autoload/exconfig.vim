@@ -501,7 +501,7 @@ function exconfig#gen_sh_update_ctags(path)
                     \ 'export OPTIONS="'.ctags_optioins.'"'        ,
                     \ 'export TMP="${DEST}/_tags"'                 ,
                     \ 'export TARGET="${DEST}/tags"'               ,
-                    \ 'sh ${TOOLS}/shell/bash/update-tags.sh'      ,
+                    \ 'bash ${TOOLS}/shell/bash/update-tags.sh'      ,
                     \ ]
     endif
 
@@ -563,7 +563,7 @@ function exconfig#gen_sh_update_cscope(path)
                     \ 'export OPTIONS="'.cscope_optioins.'"'       ,
                     \ 'export TMP="${DEST}/_cscope.out"'           ,
                     \ 'export TARGET="${DEST}/cscope.out"'         ,
-                    \ 'sh ${TOOLS}/shell/bash/update-cscope.sh'    ,
+                    \ 'bash ${TOOLS}/shell/bash/update-cscope.sh'    ,
                     \ ]
     endif
 
@@ -600,7 +600,7 @@ function exconfig#gen_sh_update_symbols(path)
                     \ 'export TOOLS="'.expand(g:ex_tools_path).'"' ,
                     \ 'export TMP="${DEST}/_symbols"'              ,
                     \ 'export TARGET="${DEST}/symbols"'            ,
-                    \ 'sh ${TOOLS}/shell/bash/update-symbols.sh'   ,
+                    \ 'bash ${TOOLS}/shell/bash/update-symbols.sh'   ,
                     \ ]
     endif
 
@@ -637,7 +637,7 @@ function exconfig#gen_sh_update_inherits(path)
                     \ 'export TOOLS="'.expand(g:ex_tools_path).'"' ,
                     \ 'export TMP="${DEST}/_inherits"'             ,
                     \ 'export TARGET="${DEST}/inherits"'           ,
-                    \ 'sh ${TOOLS}/shell/bash/update-inherits.sh'  ,
+                    \ 'bash ${TOOLS}/shell/bash/update-inherits.sh'  ,
                     \ ]
     endif
 
@@ -766,7 +766,7 @@ function exconfig#gen_sh_update_idutils(path)
                     \ 'export TOOLS="'.expand(g:ex_tools_path).'"' ,
                     \ 'export TMP="${DEST}/_ID"'                   ,
                     \ 'export TARGET="${DEST}/ID"'                 ,
-                    \ 'sh ${TOOLS}/shell/bash/update-idutils.sh'   ,
+                    \ 'bash ${TOOLS}/shell/bash/update-idutils.sh'   ,
                     \ ]
     endif
 
